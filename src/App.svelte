@@ -11,7 +11,7 @@
 	<FeedbackList />
 	<div class="built-with">
 		Built with Svelte
-		<img class="svelte-img" src="../svelte.svg" alt="">
+		<img class="svelte-img" src="../svelte.svg" alt="" />
 	</div>
 </main>
 
@@ -25,11 +25,22 @@
 		display: flex;
 		font-size: 3rem;
 		justify-content: center;
+		align-items: center;
 		margin: 20px;
 	}
 
 	.svelte-img {
 		max-width: 50px;
 		margin: 10px;
+	}
+
+	@media (max-width: 650px) {
+		.built-with {
+			font-size: 1.5rem;
+		}
+
+		.svelte-img {
+			max-width: 25px;
+		}
 	}
 </style>

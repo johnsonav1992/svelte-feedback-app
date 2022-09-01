@@ -4,7 +4,7 @@
   export let disabled = false
 </script>
 
-<button {type} {disabled} class={style}>
+<button {type} {disabled} class="{style} small-btn">
   <slot></slot>
 </button>
 
@@ -42,6 +42,14 @@
   button:disabled:hover{
     transform:scale(1);
     opacity: 1;
+  }
+
+  @media (max-width: 650px) {
+    .small-btn {
+      max-width: 40px;
+      max-height: 30px;
+      font-size: .5rem;
+    }
   }
 
 </style>

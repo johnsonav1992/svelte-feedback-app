@@ -87,13 +87,15 @@
     font-size: 16px;
   }
 
+  @media (max-width: 650px) {
+    input,
+    input::placeholder {
+          font-size: .5rem;
+      }
+  }
+
   input:focus {
     outline: none;
   }
 
-  .message{
-    padding-top: 10px;
-    text-align: center;
-    color: rebeccapurple;
-  }
 </style>
